@@ -4,7 +4,7 @@ def vigenere_cipher(text, key, decrypt=False):
     if not text.isascii() or not text.isalpha() or not text.isupper():
         raise ValueError("Text must be uppercase ASCII without numbers.")
 
-    uppercase = string.ascii_uppercase # "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    uppercase = string.ascii_uppercase
     results = ""
 
     for i, char in enumerate(text):
